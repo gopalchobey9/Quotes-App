@@ -12,7 +12,7 @@ const AllQuotes = () => {
     // let res = await axios.get('http://localhost:8080/allquotes');
     // setQuotes(res.data);
     try {
-      let res = await axios.get('http://localhost:8080/allquotes');
+      let res = await axios.get('https://backend-quote-app.onrender.com/allquotes');
       // Log the response to inspect its structure
       console.log(res.data);
       setQuotes(res.data);

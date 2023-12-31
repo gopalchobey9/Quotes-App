@@ -15,7 +15,8 @@ const NewQuotes = () => {
     e.preventDefault();
     const author = authornameRef.current.value;
     const text  =contentRef.current.value;
-    await axios.post("http://localhost:8080/addquotes" , {author,text})
+    // await axios.post("http://localhost:8080/addquotes" , {author,text})
+    await axios.post("https://backend-quote-app.onrender.com/addquotes" , {author,text})
     navigate('/')
   }
 
